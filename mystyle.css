@@ -28,3 +28,16 @@ p {
   font-size: 120%;
   margin-top: 40px;
 }
+
+.projects{
+  font-size: 150%;
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 10px;
+  margin-left: 40px;
+  color: SteelBlue;
+}
+
+.description{
+  font-size: 120%;
+}
