@@ -1,29 +1,156 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <title> Alex Hermstad </title>
-  </head>
-  <body>
-    <div id="name">
-    Alex Hermstad
+
+<head>
+  <meta charset="UTF-8">
+  <title>pw2</title>
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class='container-fluid' id='header'>
+    <div class='name'>
+      <h1> Alex Hermstad </h1>
     </div>
-    <center>
-    <div class="links">
-    <a href="aboutPage.html">About</a>
+    <div class='title'>
+      <h4> Developer and Engineer </h4>
     </div>
-    <div class="links">
-    <a href="contactPage.html">Contact</a>
+  </div>
+  <nav class="navbar navbar-default navbar-custom" data-spy="affix" data-offset-top="178">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav center-class">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
-    <div class="links">
-    <a href="https://github.com/hermstadalex">Github</a>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class='container-fluid'>
+    <a id='about'></a>
+    <h1 class='titles'>About me</h1>
+    <img src='phot.jpg' class='img-responsive-me img-thumbnail center-block img-circle' />
+    <div class='intro-blurb'>
+      <p class='lead text-center'> Welcome to my webpage</p>
+      <p class='blurb-body'> My name is Alex Hermstad, and I am a Senior Computer Science Student at UCSD.
+        <p class='blurb-body'>I believe in the use of Technology and Design to empower myself and those around me, and I am always working towards
+          this goal.
+        </p>
+      </p>
+      <p class='blurb-body'>
+        When I am not programming, I also like drinking coffee, reading, and music.
+        <p>
     </div>
-    <div class ="links">
-    <a href="RESUME.pdf">Resume</a>
+    <a id='experience'></a>
+    <h1 class='titles'>Experience</h1>
+    <div class='row company'>
+      <div class='col col-md-6 company-pic'>
+        <img src='okta.jpg' class='img-responsive center-block' />
+      </div>
+      <div class='col col-md-6 company-desc'>
+        <p class='lead text-center'> Software Engineering Intern </p>
+        <p> Incoming intern for Summer 2017. Will be working on the Office 365 Integration team.</p>
+      </div>
     </div>
-    <div class="links">
-      <a href="projectsPage.html">Web Projects</a>
+    <div class='row company'>
+      <div class='col col-md-6 company-pic'>
+        <img src='FLE.jpg' class='img-responsive center-block' />
+      </div>
+      <div class='col col-md-6 company-desc'>
+        <p class='lead text-center'> Software Engineering Intern </p>
+        <p> Working on Kolibri installations backend team. Collaborating to make the Kolibri program extensible to other OS's
+          and package managers.</p>
+      </div>
     </div>
-    </center>
-  </body>
+    <div class='row company'>
+      <div class='col col-md-6 company-pic'>
+        <img src='doctible.jpg' class='img-responsive center-block' />
+      </div>
+      <div class='col col-md-6 company-desc'>
+        <p class='lead text-center'> Software Engineering Intern </p>
+        <p> Worked on platform integrations team. Integrated the Doctible platform with multiple cloud-based office management
+          services.
+        </p>
+      </div>
+    </div>
+    <a id='projects'></a>
+    <h1 class='titles'> Projects </h1>
+    <div class='row project-row'>
+      <div class='col col-md-6 project'>
+        <p class='lead proj-title'> <a href='http://musexplore.space/' target="_blank">MusExplore</a></p>
+        <a href='http://musexplore.space/' target="_blank">
+          <img src='musexplore2.png' class='img-responsive center-block proj-pic' />
+        </a>
+        <p class='technologies'> Python, Django, Bootstrap </p>
+        <p class='proj-description'> Music-based web-app combining the APIs of Pitchfork and Last FM to create a useful and informative musical experience.
+        </p>
+      </div>
+      <hr id='first-rule'>
+      <div class='col col-md-6 project'>
+        <p class='lead proj-title'> <a href='https://campusroutes.herokuapp.com/select' target="_blank">CampusRoutes</a></p>
+        <a href='https://campusroutes.herokuapp.com/select' target="_blank">
+          <img src='campusroutes.png' class='img-responsive center-block proj-pic' />
+        </a>
+        <p class='technologies'> NodeJS, JavaScript, jQuery, Firebase </p>
+        <p class='proj-description'> Location-based web-app utilizing the Google Maps API. Prototype of app which students at college campuses to share
+          and record custom routes for getting around campus.</p>
+      </div>
+    </div>
+    <hr id='first-rule'>
+    <div class='row project-row'>
+      <div class='col col-md-6 project'>
+        <p class='lead proj-title'> Ask For It </h3>
+          <img src='askforit.png' class='img-responsive center-block proj-pic' />
+          <p class='technologies'> Python, Django, JavaScript, Bootstrap </p>
+          <p class='proj-description'> Web-app making use of the DocuSign API to make personal contract signing easy between individuals. </p>
+      </div>
+    </div>
+    <a id='contact'></a>
+    <h1 class='titles'> Contact </h1>
+    <div class='row contact-row'>
+      <div class='col col-md-3 col-sm-3 col-xs-6 contact-icon'>
+        <a href='mailto:hermstadalex@gmail.com'> <img src='email.jpeg' class='img-responsive center-block contact-img' />
+        </a>
+      </div>
+      <div class='col col-md-3 col-sm-3 col-xs-6 contact-icon'>
+        <a href='https://github.com/hermstadalex'>
+          <img src='github.svg' class='img-responsive center-block contact-img' />
+        </a>
+      </div>
+      <div class='col col-md-3 col-sm-3 col-xs-6 contact-icon'>
+        <a href='https://twitter.com/AlexHermstad'>
+          <img src='twitter.png' class='img-responsive center-block contact-img' />
+        </a>
+      </div>
+      <div class='col col-md-3 col-sm-3 col-xs-6 contact-icon'>
+        <a href='https://www.linkedin.com/in/alexander-hermstad-35806b104'>
+          <img src='linkedin.jpg' class='img-responsive center-block contact-img' />
+        </a>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
