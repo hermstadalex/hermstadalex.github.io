@@ -45,7 +45,7 @@
 
 /* Medium Devices, Desktops */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 450px) {
   .img-responsive-me {
     max-width: 15%;
     max-height: auto;
@@ -59,11 +59,13 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+  #first-rule {
+    display: none;
+  }
 }
 
 
 /* Large Devices, Wide Screens */
-
 @media only screen and (min-width: 1200px) {
   .img-responsive-me {
     max-width: 15%;
